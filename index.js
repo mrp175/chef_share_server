@@ -1,7 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
-
+require('dotenv').config();
 const router = require('./router');
 const { PORT } = process.env;
 
