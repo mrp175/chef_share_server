@@ -1,8 +1,10 @@
 const mongoose = require('mongoose');
-const { DB_CONN } = process.env;
+const { DB_CONN, NODE_ENV,DB_CONN_TEST} = process.env;
+
+const dbURL = (NODE_ENV === 'test')?DB_CONN_TEST:DB_CONN;
 
 mongoose.connect(
-   DB_CONN,
+    dbURL,
   { useNewUrlParser: true, useUnifiedTopology: true },
   (err) => {
     if (err) {
