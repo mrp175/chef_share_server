@@ -28,8 +28,8 @@ describe('Backend testing', () => {
     await mongoose.disconnect();
   });
 
-  describe('login should work correctly - endpoint "/login"', function (done) {
-    login(request, User, done);
+  describe('login should work correctly - endpoint "/login"', function () {
+    login();
   });
 
 //   describe('Listing recipes from user', (done)=>{
