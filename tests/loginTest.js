@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 //const User = require('../models/user');
 
 async function login (request, User, done) {
-  describe('login should work correctly - endpoint "/login"', async function () {
+  
     beforeEach(async () => {
       try {
         const {email, userName, password} = mocks.jeff;
@@ -32,7 +32,7 @@ async function login (request, User, done) {
       .expect(200)
       .end(done);
     });
-  });
+  
 }
 
 module.exports = login;
