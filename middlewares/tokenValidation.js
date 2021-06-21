@@ -14,6 +14,6 @@ function isTokenValid (token) {
   return storage.includes(token);
 }
 
-module.exports = {
+module.exports = {storage,
   validateToken, isTokenValid, invalidateToken
 };
