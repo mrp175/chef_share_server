@@ -15,5 +15,5 @@ function isTokenValid (token) {
 }
 
 module.exports = {
-  validateToken, isTokenValid, invalidateToken
+  validateToken, isTokenValid, invalidateToken, storage
 };

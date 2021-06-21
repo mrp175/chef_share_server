@@ -1,4 +1,4 @@
-const mockUsers = {
+const mockUser = {
   jeff: {
     email: 'jeff@gmail.com',
     password: 'test', 
@@ -10,4 +10,4 @@ const mockUsers = {
   }
 }
 
-module.exports = mockUsers;
+module.exports = {mockUser};
