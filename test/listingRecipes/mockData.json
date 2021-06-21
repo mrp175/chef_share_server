@@ -1,0 +1,391 @@
+[{
+  "_id": "60cdb63d7701481e3450fc89",
+  "recipeStore" : [ 
+      {
+          "name" : "Pesto Pasta with V8® Healthy Greens",
+          "keywords" : [ 
+              "sponsored", 
+              "recipes", 
+              "assetmiddlecenterfullbleed", 
+              "web"
+          ],
+          "recipeIngredient" : [ 
+              "⅓ cup raw pistachios", 
+              "3 oz. parmesan, grated (about ¾ cup), plus more", 
+              "2 garlic cloves, finely grated", 
+              "4 cups basil leaves (about 2 bunches)", 
+              "2 cups parsley leaves", 
+              "⅔ cup Extra-virgin olive oil", 
+              "⅓ cup of V8® Healthy Greens", 
+              "1 tsp. Kosher salt", 
+              "12 oz. Long pasta (such as spaghetti or bucatini)"
+          ],
+          "image" : "https://assets.bonappetit.com/photos/60b8fa1f4cf78405f9ff6883/5:7/w_3125,h_4375,c_limit/2028-01a-Healythyish_V8-020-RGB.jpg",
+          "recipeInstructions" : [ 
+              "Put pistachios, cheese, and garlic in a blender and process until finely ground, about 1 minute. Add basil, parsley, and place the top back on.", 
+              "With the motor running, add oil in a slow and steady stream until pesto is mostly smooth, with just a few flecks of green, about 1 minute. Pour in the V8® Healthy Greens and season with salt.", 
+              "Cook pasta in a large pot of boiling salted water, stirring occasionally, until al dente. Drain, reserving ¼ cup pasta cooking liquid.", 
+              "Place pesto and 2 Tbsp. unsalted butter, cut into pieces, in a large bowl. Add pasta and half of pasta cooking liquid. Using tongs, toss vigorously, adding more pasta cooking liquid if needed, until pasta is glossy and well coated with sauce.", 
+              "Divide pasta among bowls and top with more Parmesan, if you desire."
+          ],
+          "publisher" : "Bon Appétit",
+          "url" : "https://www.bonappetit.com/recipe/pesto-pasta-with-v8-healthy-greens",
+          "id" : "55cd8d65-1133-4d7f-8dcf-156f13f87f3e",
+          "notes" : [],
+          "origin" : "test1"
+      }, 
+      {
+          "name" : "Paprika Shrimp with Buttery V8 Sauce",
+          "keywords" : [ 
+              "sponsored", 
+              "recipes", 
+              "web"
+          ],
+          "recipeIngredient" : [ 
+              "3 Tbsp. Extra-virgin olive oil, plus more for drizzling", 
+              "4 garlic cloves, thinly sliced", 
+              "1¼ lb. large shrimp, peeled, deveined, preferably tails left on", 
+              "1 tsp. paprika", 
+              "½ tsp. mild red pepper flakes (such as Maras, Urfa, or Aleppo-style), plus more for serving", 
+              "pinch of Kosher salt", 
+              "⅓ cup of V8 Original 100% Vegetable Juice", 
+              "2 Tbsp. unsalted butter", 
+              "½ lemon", 
+              "½ cup coarsely chopped parsley"
+          ],
+          "image" : "https://assets.bonappetit.com/photos/60b8fa256db78eec220955de/5:7/w_3130,h_4382,c_limit/2028-02c-Healythyish_V8-037-RGB.jpg",
+          "recipeInstructions" : [ 
+              "Combine 3 Tbsp. oil and garlic in a large skillet. Set over medium heat and cook, tossing occasionally, until garlic has softened but has not taken on any color, 2–3 minutes.", 
+              "Add shrimp, paprika, and red pepper flakes, and increase heat to medium-high. Season lightly with salt and cook, tossing often, until shrimp is almost cooked through, about 2 minutes.", 
+              "Add V8 Original 100% Vegetable Juice and butter and cook, still tossing, until reduced by half and you have a silky red sauce, about 2 minutes.", 
+              "Remove skillet from heat. Finely grate zest from lemon half over shrimp, then squeeze in about 1 tbsp. lemon juice. Scatter parsley and toss once more.", 
+              "Transfer shrimp to a platter and drizzle with plenty of oil.", 
+              "Serve with thick slices of crusty bread."
+          ],
+          "publisher" : "Bon Appétit",
+          "url" : "https://www.bonappetit.com/recipe/paprika-shrimp-with-buttery-v8-sauce",
+          "id" : "42911e90-bd4a-4b55-9b42-8a592fe68d27",
+          "notes" : [],
+          "origin" : "test1"
+      }, 
+      {
+          "name" : "Sach Ko Ang",
+          "keywords" : [ 
+              "recipes", 
+              "cambodia ", 
+              "grill", 
+              "galangal", 
+              "chicken recipes", 
+              "web"
+          ],
+          "recipeYield" : "6 appetizer servings or 4 main course servings ",
+          "recipeIngredient" : [ 
+              "1 shallot, thinly sliced", 
+              "2 garlic cloves, thinly sliced", 
+              "1 1\" piece ginger, peeled, finely chopped", 
+              "3 cups shredded crunchy vegetables and/or fruit (such as carrots, cucumbers, and/or young green papaya)", 
+              "1 cup unseasoned rice vinegar or white wine vinegar", 
+              "1 cup grated palm sugar, coconut sugar, or (packed) light brown sugar", 
+              "2 Tbsp Diamond Crystal or 1 Tbsp. plus ½ tsp. Morton kosher salt", 
+              "9 lemongrass stalks, tough outer layers removed, thinly sliced", 
+              "3 long red chiles (such as cayenne or serrano), thinly sliced", 
+              "2 medium shallots, thinly sliced, divided", 
+              "3 garlic cloves, thinly sliced, divided", 
+              "5 makrut (Thai) lime leaves, thinly sliced, or zest of 2 limes", 
+              "1 2\" piece galangal or ginger, peeled, thinly sliced, or 1 Tbsp. plus 1½ tsp. very finely chopped galangal paste", 
+              "3 Tbsp. oyster sauce", 
+              "1 Tbsp. plus 1½ tsp. grated palm sugar, coconut sugar, or light brown sugar", 
+              "1 Tbsp. fish sauce", 
+              "1 Tbsp. garlic powder", 
+              "2 Tbsp. vegetable oil, plus more for grill", 
+              "1½ tsp. Diamond Crystal or ¾ tsp. Morton kosher salt, plus more", 
+              "2 lb. trimmed boneless sirloin or rib-eye steaks, cut into 1\" pieces", 
+              "Sixteen 8\"–10\" metal or bamboo skewers, soaked 30 minutes"
+          ],
+          "image" : "https://assets.bonappetit.com/photos/60c12d326b8f2e5376fe5dfc/5:7/w_1045,h_1463,c_limit/Recipe-Sach-Ko-Jakak-Skewers.jpg",
+          "recipeInstructions" : [ 
+              "Toss shallot, garlic, ginger, and vegetables in a medium bowl to combine, then add vinegar, palm sugar, and salt. Cover and let sit at room temperature at least 30 minutes for a quick-pickle, or chill up to 12 hours..", 
+              "Pulse lemongrass, chiles, shallots, garlic, lime leaves, galangal, turmeric, oyster sauce, palm sugar, fish sauce, garlic powder, 2 Tbsp. oil, and 1½ tsp. Diamond Crystal or ¾ tsp. Morton kosher salt in a food processor to a finely textured paste.", 
+              "Transfer paste to a large bowl and add beef. Using your hands, massage paste into meat until completely coated. Cover and let sit at room temperature at least 30 minutes, or chill up to 12 hours. If chilling, let beef sit out at room temperature 1 hour before grilling.", 
+              "Prepare a grill for medium-high heat; oil grate. Thread beef onto skewers. (Alternatively, you can cook these in a cast-iron skillet lightly coated with oil.) Grill, turning about every minute or so, until browned and lightly charred in spots, 6–8 minutes for medium, or done to your liking. (The beef should be firm to the touch with a little bounce when pressed and slightly pink in the center.)", 
+              "Transfer skewers to plates and very lightly season with salt. Drain pickles and serve on the side."
+          ],
+          "publisher" : "Bon Appétit",
+          "author" : "Lara Lee",
+          "url" : "https://www.bonappetit.com/recipe/sach-ko-ang",
+          "id" : "ac2c7be6-8834-4a09-958d-43763683c865",
+          "notes" : [],
+          "origin" : "test1"
+      }
+  ],
+  "email" : "test1@test.test",
+  "password" : "$2b$10$r6/3tIwx5Pb3wa5wO2jyMOLtSPR0.f6o.1/m.NZLSUguXwibbZHLy",
+  "username" : "test1"
+},
+{
+  "_id": "60cdb5da7701481e3450fc88",
+  "recipeStore" : [ 
+      {
+          "name" : "Cheesy Tomato Hand Pies",
+          "keywords" : [ 
+              "basically", 
+              "recipes", 
+              "puff pastry dough", 
+              "tomato", 
+              "cheese", 
+              "web"
+          ],
+          "recipeYield" : "Makes 8",
+          "recipeIngredient" : [ 
+              "1 14-oz. package frozen all-butter puff pastry (preferably Dufour)", 
+              "2 large garlic cloves", 
+              "3–4 sprigs thyme", 
+              "2 large sprigs marjoram or oregano", 
+              "3 Tbsp. extra-virgin olive oil", 
+              "1 pint cherry tomatoes", 
+              "1¼ tsp. Diamond Crystal or ¾ tsp. Morton kosher salt, divided", 
+              "½ tsp. freshly ground black pepper, divided; plus more (optional)", 
+              "6 oz. Gruyére or other semihard or semisoft melting cheese (such as cheddar, low-moisture mozzarella, or Fontina)", 
+              "⅓ cup crème fraîche", 
+              "⅛ tsp. freshly ground nutmeg (optional)", 
+              "1 large egg", 
+              "All-purpose flour (for dusting)"
+          ],
+          "image" : "https://assets.bonappetit.com/photos/60abdddfc4c5c255cc8f8b51/5:7/w_1205,h_1687,c_limit/Basically-Tomato-Handpies.jpg",
+          "recipeInstructions" : [ 
+              "Thaw one 14-oz. package frozen all-butter puff pastry overnight in the refrigerator. Keep chilled until ready to roll out. (Or, if you forget to move pastry to the refrigerator the night before, use this day-of method. Remove the pastry from the box and place on a parchment-lined baking sheet—don’t unfold it, or it’ll crack. Let sit 10 minutes, turning the pastry halfway through. If it’s pliable after 10 minutes, unfold. If your box has more than 1 sheet of puff pastry, separate with some parchment paper. Chill in the refrigerator until ready to use. If pastry isn’t ready, wait another 5 minutes. Puff pastry goes from stiff to flabby and sticky in a matter of minutes, so be vigilant.)", 
+              "Gently crush 2 large garlic cloves with the flat side of a chef’s knife just to loosen the skins. Peel and thinly slice the cloves (save peels for stock, if you like).", 
+              "Strip leaves from 3–4 sprigs thyme and 2 large sprigs marjoram or oregano and coarsely chop. (You should have about 1 tsp. thyme and 1 Tbsp. marjoram.)", 
+              "Combine garlic and 3 Tbsp. extra-virgin olive oil in a cold large skillet. Set over medium heat and cook, stirring occasionally with a wooden spoon, until garlic begins to turn golden, about 3 minutes. Add herbs and cook until fragrant, about 30 seconds. Add 1 pint cherry tomatoes, ¾ tsp. Diamond Crystal or ½ tsp. Morton kosher salt, ¼ tsp. freshly ground black pepper, and ⅓ cup water to pan. Bring to a simmer and cook, stirring occasionally, until tomatoes are just starting to soften, about 5 minutes. Gently crush tomatoes with spoon. Continue to cook, stirring occasionally, until tomatoes are jammy, 8–10 minutes more, depending on ripeness. (You’re looking for a consistency slightly looser than tomato paste to prevent soggy hand pies.) Let tomato mixture cool.", 
+              "Meanwhile, grate 6 oz. Gruyére or other semihard or semisoft melting cheese (such as cheddar, low-moisture mozzarella, or Fontina) on the large holes of a box grater. Transfer to a medium bowl and add ⅓ cup crème fraîche, remaining ½ tsp. Diamond Crystal or ¼ tsp. Morton kosher salt, remaining ¼ tsp. freshly ground black pepper, and ⅛ tsp. freshly ground nutmeg (if desired). Mix well and set cheese mixture aside.", 
+              "Beat 1 large egg with 1 Tbsp. water in a small bowl to blend. Set egg wash aside.", 
+              "Roll out puff pastry on a large well-floured surface to an 18x15\" rectangle. Slice in half lengthwise, then in half crosswise. Cut each quarter in half again crosswise so you have 8 rectangles, about 7½x4½\".", 
+              "To assemble the hand pies, arrange a pastry rectangle so a short side is closest to you. Mound 2 Tbsp. reserved cheese mixture on bottom half of each rectangle, leaving a 1\" border along bottom and sides. Top cheese mixture with 1 Tbsp. tomato mixture.", 
+              "Working one at a time, brush borders of pastry with a thin layer of reserved egg wash. Fold the top (empty) half of pastry up and over filling so edges of pastry line up, then gently press together. Crimp edges with a fork to seal. (Be forceful as puff pastry has a tendency to pull open when baking.) Trim about ¼\" from each crimped side with a bench scraper or knife, pressing straight down (this will help seal the dough). Place sealed hand pies on a parchment-lined baking sheet, spacing 1\" apart.", 
+              "Lightly brush tops of hand pies with egg wash and sprinkle with coarsely ground black pepper if desired. Chill in the freezer 30 minutes.", 
+              "Meanwhile, preheat oven to 375°.", 
+              "Pull hand pies from freezer and cut two ½\"-long vents in the top of each.", 
+              "Bake hand pies until pastry is cooked through, puffed, and golden brown, 32–35 minutes. Let cool 10 minutes on baking sheet. If any cheese has oozed out and connected the pies, cut with a spatula so each pie has some crispy, lacy cheese bits. Serve warm or at room temperature."
+          ],
+          "publisher" : "Bon Appétit",
+          "author" : "Asha Loupy",
+          "url" : "https://www.bonappetit.com/recipe/cheesy-tomato-hand-pies",
+          "id" : "b8f33e72-d2cf-4c00-af99-7bbe987db286",
+          "notes" : [],
+          "origin" : "test2"
+      }, 
+      {
+          "name" : "Toast Skagen (Swedish Shrimp Toast)",
+          "keywords" : [ 
+              "basically", 
+              "recipes", 
+              "toast", 
+              "seafood", 
+              "shrimp", 
+              "swedish food", 
+              "web"
+          ],
+          "recipeYield" : "Makes 4 ",
+          "recipeIngredient" : [ 
+              "¼ small bunch dill", 
+              "¼ medium red onion", 
+              "1 12-oz. bag frozen cooked peeled, deveined, tail-off small shrimp (preferably North Atlantic), thawed", 
+              "1 lemon", 
+              "3 Tbsp. mayonnaise (preferably Hellmann’s or Best Foods)", 
+              "2 Tbsp. crème fraîche", 
+              "¼ tsp. kosher salt, plus more", 
+              "Freshly ground black pepper", 
+              "2 Tbsp. unsalted butter", 
+              "4 slices white bread (such as Pepperidge Farm)", 
+              "4 tsp. bleak fish or whitefish roe (optional)"
+          ],
+          "image" : "https://assets.bonappetit.com/photos/60abddddae31559c51aa07e3/5:7/w_1205,h_1687,c_limit/Basically-ToastSkagen.jpg",
+          "recipeInstructions" : [ 
+              "Finely chop tender sprigs from ¼ small bunch dill to yield ¼ cup.; place in a large bowl. Set some larger sprigs aside for serving.", 
+              "Finely chop ¼ medium red onion (you should have about 3 Tbsp.) and add to bowl with dill.", 
+              "Thoroughly pat dry one 12-oz. bag frozen cooked small shrimp, thawed, with a kitchen towel or paper towels. Coarsely chop half of the shrimp. Place all shrimp in bowl with onion and dill.", 
+              "Using a Microplane, finely grate zest of 1 lemon into bowl, then cut lemon in half and squeeze juice of one half through your hand or a fine-mesh sieve into a small bowl; you should have 1 Tbsp. Add lemon juice to bowl with shrimp and mix gently with a rubber spatula to combine. Cut remaining lemon half into 4 wedges and set aside for serving.", 
+              "Add 3 Tbsp. mayonnaise, 2 Tbsp. crème fraîche, and ¼ tsp. kosher salt to shrimp; mix gently to coat. Season with freshly ground black pepper and more salt if needed. Cover with plastic wrap or transfer to an airtight container and cover. Chill at least 30 minutes and up to 1 hour.", 
+              "When ready to serve toast, melt 2 Tbsp. unsalted butter in a large skillet over medium-low heat. As soon as butter is sizzling, arrange 4 slices white bread in pan and cook, turning a few times to allow both sides to absorb some butter, until golden brown, about 4 minutes.", 
+              "Transfer toast to plates and top with shrimp salad. Spoon 1 tsp. bleak fish or whitefish roe (if using) over each toast and top with reserved dill leaves. Serve with reserved lemon wedges for squeezing over."
+          ],
+          "publisher" : "Bon Appétit",
+          "author" : "Hana Asbrink",
+          "url" : "https://www.bonappetit.com/recipe/toast-skagen-swedish-shrimp-toast",
+          "id" : "6d603dd2-72ed-4f9d-89dc-78ade6ca7818",
+          "notes" : [],
+          "origin" : "test2"
+      }, 
+      {
+          "name" : "Sambal Goreng Tempe",
+          "keywords" : [ 
+              "basically", 
+              "recipes", 
+              "indonesian", 
+              "vegetarian", 
+              "stir-fry", 
+              "web"
+          ],
+          "recipeYield" : "4 servings",
+          "recipeIngredient" : [ 
+              "2 8-oz. packages tempeh", 
+              "¼ cup vegetable oil, plus more for frying (3–4 cups)", 
+              "1 tsp. Diamond Crystal or ½ tsp. Morton kosher salt, plus more", 
+              "3 large or 4 medium shallots", 
+              "1 2\" piece ginger", 
+              "1 large or 2 small plum tomatoes", 
+              "6 garlic cloves", 
+              "4–6 red serrano or Fresno chiles", 
+              "3.5 oz. green beans", 
+              "½ large bunch Tuscan or curly kale (about 6 oz.)", 
+              "2 lemongrass stalks", 
+              "4 makrut (Thai) lime leaves (optional)", 
+              "3 Tbsp. kecap manis", 
+              "1 Tbsp. grated palm sugar or light brown sugar", 
+              "1 tsp. tamarind concentrate or 2½ tsp. tamarind paste", 
+              "2 tsp. ground coriander", 
+              "1 cup salted dry-roasted peanuts", 
+              "Steamed white rice (for serving)"
+          ],
+          "image" : "https://assets.bonappetit.com/photos/60abde508810519b9f0f7207/5:7/w_1205,h_1687,c_limit/Basically-Sambal-Goreng.jpg",
+          "recipeInstructions" : [ 
+              "Start by frying the tempeh. Cut two 8-oz. packages tempeh into 1x½ x¼\" sticks with a chef’s knife. Pour vegetable oil into a medium heavy saucepan to come 2\" up sides (but make sure pan is no more than two thirds full); clip a deep-fry thermometer to sides. Heat oil over medium until thermometer registers 350°. (If you don’t have a deep-fry thermometer, check oil temperature by adding a cube of bread—it should turn golden in 15–20 seconds.) Line a rimmed baking sheet with paper towels.", 
+              "Working in 2 batches and bringing oil back to temperature between batches, carefully lower tempeh into hot oil with a slotted spoon or spider. Fry, turning occasionally until golden and crunchy all over, 7–9 minutes. Transfer to prepared baking sheet to drain; season with kosher salt.", 
+              "Now make the spice paste. Cut 3 large or 4 medium shallots in half lengthwise and coarsely chop. Scrape skin from one 2\" piece ginger with a spoon; discard. Thinly slice ginger. Cut 1 large or 2 small plum tomatoes into wedges.", 
+              "Pulse shallots, ginger, tomatoes, 6 garlic cloves, and 1 tsp. Diamond Crystal or 1/2 tsp. Morton kosher salt in a food processor to make a coarse paste; set spice paste aside.", 
+              "Prep the vegetables. Thinly slice 4–6 red serrano or Fresno chiles. (If you’re heat averse, go with the smaller number and scrape away seeds and membranes before slicing.) Trim 3½ oz. green beans and slice into 1\" pieces. Remove ribs and stems from ½ large bunch Tuscan or curly kale (about 6 oz.); discard. Chop leaves into large pieces.", 
+              "Bruise 2 lemongrass stalks with flat side of knife. Halve stalks crosswise so they will fit in skillet later. If using 4 makrut lime leaves, partially tear in a few places to help release flavor.", 
+              "Make the sauce: Stir 3 Tbsp. kecap manis, 1 Tbsp. palm sugar or brown sugar, 1 tsp. tamarind concentrate or 2½ tsp. tamarind paste, and ¾ cup water in a measuring glass to combine.", 
+              "Heat ¼ cup vegetable oil in a large skillet or wok over medium. Scrape in reserved spice paste, then add lemongrass and lime leaves. Cook, stirring occasionally with a heatproof rubber spatula, until paste is fragrant and beginning to take on some color and stick to pan, about 8 minutes. Add chiles and 2 tsp. ground coriander. Cook, stirring occasionally, until chiles are softened, about 5 minutes.", 
+              "Add tempeh, green beans, kale, sauce, and 1 cup salted dry-roasted peanuts. Cook, stirring occasionally, until liquid evaporates and spice paste and sauce cling to ingredients, about 5 minutes. Taste and season with more salt if needed.", 
+              "Serve sambal goreng tempe with steamed white rice."
+          ],
+          "publisher" : "Bon Appétit",
+          "author" : "Lara Lee",
+          "url" : "https://www.bonappetit.com/recipe/sambal-goreng-tempe",
+          "id" : "cf0c1c67-fab1-4c33-8de5-a0b1088ecff3",
+          "notes" : [],
+          "origin" : "test2"
+      }
+  ],
+  "email" : "test2@test.test",
+  "password" : "$2b$10$a3KRP0agpbu7ktrtKh4VPugY5zNcm94/8Z1sxFpU8iXKT0HwnKgwK",
+  "username" : "test2"
+
+},
+{  "_id": "60cdb5287701481e3450fc87",
+  "recipeStore" : [ 
+      {
+          "name" : "Royal Roselle Fizz",
+          "keywords" : [ 
+              "recipes", 
+              "cocktail", 
+              "web"
+          ],
+          "recipeYield" : "Makes 1",
+          "recipeIngredient" : [ 
+              "1 cup dried hibiscus flowers, rinsed", 
+              "10 dried bay leaves", 
+              "2 cups raw sugar", 
+              "10 dried bay leaves", 
+              "1 oz. sweet vermouth", 
+              "½ oz. fresh lime juice", 
+              "1 tsp. pickle brine", 
+              "A dash of Angostura bitters", 
+              "Dry sparkling wine (for serving)", 
+              "Bay leaves (for serving)"
+          ],
+          "image" : "https://assets.bonappetit.com/photos/60a3ce4b1ff371fad14c4dae/5:7/w_1570,h_2198,c_limit/Juneteenth-Royal-Roselle-Fizz.jpg",
+          "recipeInstructions" : [ 
+              "Combine hibiscus flowers and bay leaves in a small bowl. Bring 5 cups water to a boil in a small saucepan and pour over hibiscus flowers and bay leaves to cover. Let sit 8 hours (overnight works well), then strain through a fine-mesh sieve into a large measuring glass or small bowl; discard solids. Cover and chill tea until cold, at least 1 hour.\nDo ahead: Tea can be made 5 days ahead. Keep chilled.", 
+              "Bring raw sugar, bay leaves, and 2 cups water to a simmer in a small saucepan, stirring to dissolve sugar. Remove from heat and let cool.", 
+              "Strain simple syrup through a fine-mesh sieve into a measuring glass or small bowl; discard bay leaves. Cover and chill until cold, at least 1 hour.\nDo ahead: Simple syrup can be made 5 days ahead. Keep chilled.", 
+              "Stir vermouth, lime juice, pickle brine, bitters, 2 oz. hibiscus tea, and ½ oz. simple syrup in a glass to combine. Add ice to fill and top off with sparkling wine. Garnish with bay leaves."
+          ],
+          "publisher" : "Bon Appétit",
+          "author" : "Shyretha Sheats",
+          "url" : "https://www.bonappetit.com/recipe/royal-roselle-fizz",
+          "id" : "00928f86-5ad7-42c5-a1b2-cd7392a5279e",
+          "notes" : [],
+          "origin" : "test3"
+      }, 
+      {
+          "name" : "Barbara’s Picnic Fried Chicken",
+          "keywords" : [ 
+              "recipes", 
+              "fried chicken", 
+              "web"
+          ],
+          "recipeYield" : "4 Servings",
+          "recipeIngredient" : [ 
+              "¾ tsp. ground cumin", 
+              "¼ tsp. smoked paprika", 
+              "5 tsp. Diamond Crystal or 2½ tsp. Morton kosher salt, divided", 
+              "2¾ tsp. garlic powder, divided", 
+              "2½ tsp. freshly ground black pepper, divided", 
+              "1 3-lb. chicken, cut into 10 pieces (2 wings, 4 breasts, 2 thighs, and 2 drumsticks)", 
+              "2 cups all-purpose flour", 
+              "1 Tbsp. mild curry powder", 
+              "1 tsp. paprika", 
+              "Vegetable oil (for frying; 4–5 cups)", 
+              "A deep-fry thermometer; a brown paper bag"
+          ],
+          "image" : "https://assets.bonappetit.com/photos/60a3ef67061a3fc28d137f2d/5:7/w_880,h_1232,c_limit/0621-Picnic-Fried-Chicken.jpg",
+          "recipeInstructions" : [ 
+              "Mix together cumin, smoked paprika, 3 tsp. Diamond Crystal or 1½ tsp. Morton kosher salt, ¾ tsp. garlic powder, and ½ tsp. pepper in a small bowl.", 
+              "Arrange chicken on a rimmed baking sheet; sprinkle all over with spice mixture. Let sit at room temperature 30 minutes, or chill, uncovered, up to 12 hours.", 
+              "Combine flour, curry powder, paprika, and remaining 2 tsp. Diamond Crystal or 1 tsp. Morton kosher salt, 2 tsp. garlic powder, and 2 tsp. pepper in a medium paper bag. Close bag and shake well to combine. Add chicken to bag, close, and shake well to coat.", 
+              "Pour oil into a large cast-iron skillet or Dutch oven to come 1\" up sides; clip thermometer to sides of pan and heat oil over medium-high until thermometer registers 350°. Working in 2 batches and returning oil to 350° between batches, cook chicken pieces, turning halfway through, until deep golden brown, 10–15 minutes per batch (an instant-read thermometer inserted into each piece should register 160° for light meat and 165° for dark). Transfer fried chicken to a wire rack and let cool slightly before serving."
+          ],
+          "publisher" : "Bon Appétit",
+          "author" : "Kwame Alexander",
+          "url" : "https://www.bonappetit.com/recipe/barbaras-picnic-fried-chicken",
+          "id" : "a952d969-c359-4a8c-b5c3-bcf530cc446d",
+          "notes" : [],
+          "origin" : "test3"
+      }, 
+      {
+          "name" : "Roast Chicken With Fresh Tomatoes",
+          "keywords" : [ 
+              "recipes", 
+              "healthyish", 
+              "roast chicken", 
+              "tomato", 
+              "web"
+          ],
+          "recipeYield" : "4 Servings",
+          "recipeIngredient" : [ 
+              "1 lemon", 
+              "6 garlic cloves, finely grated", 
+              "2 tsp. finely chopped oregano, plus leaves for serving", 
+              "⅓ cup plus 4 Tbsp. extra-virgin olive oil, divided", 
+              "2½ lb. skin-on, bone-in chicken thighs and/or drumsticks", 
+              "2 medium red onions, cut into 1\"-thick wedges", 
+              "Kosher salt, freshly ground pepper", 
+              "1 cup plain whole-milk Greek yogurt", 
+              "½ cup crumbled feta", 
+              "2 large heirloom or beefsteak tomatoes, sliced into ½\"-thick rounds and/or wedges"
+          ],
+          "image" : "https://assets.bonappetit.com/photos/60ad1266248102a01bcfa203/5:7/w_1155,h_1617,c_limit/0621-Chicken-with-Tomatoes-UPDATE.jpg",
+          "recipeInstructions" : [ 
+              "Place a rack in top third of oven; preheat to 450°. Cut lemon in half. Thinly slice one half into rounds and remove seeds; set other half aside for sauce.", 
+              "Whisk garlic, 2 tsp. chopped oregano, and ⅓ cup oil in a large bowl. Pat chicken dry with paper towels and transfer to bowl; add onions and lemon slices. Season with salt and pepper; toss to coat.", 
+              "Heat 2 Tbsp. oil in a large heavy skillet, preferably cast iron, over medium-high. Cook chicken (leave onion and lemon behind in bowl), skin side down, until deep golden brown and crisp, 5–7 minutes. Transfer to a plate (chicken won’t be cooked through yet).", 
+              "Cook onions and lemon slices in the same pan, turning occasionally, until onions have taken on some color and lemon slices have shriveled slightly, about 5 minutes.", 
+              "Arrange chicken in pan, skin side up; transfer pan to oven. Roast until chicken is cooked through and onions are softened but still hold their shape, 16–20 minutes.", 
+              "Meanwhile, stir yogurt, feta, and remaining 2 Tbsp. oil in a medium bowl to combine. Squeeze in juice from reserved lemon half and add 2 Tbsp. water; mix well. Season feta sauce with salt.", 
+              "Arrange tomatoes on a platter; season with salt. Using tongs, arrange chicken, onions, and lemon slices on top. Pour any pan juices over and top with oregano leaves. Serve with feta sauce alongside."
+          ],
+          "publisher" : "Bon Appétit",
+          "author" : "Andy Baraghani",
+          "url" : "https://www.bonappetit.com/recipe/roast-chicken-with-tomatoes",
+          "id" : "f96c2214-b64b-487c-847c-e086f163127a",
+          "notes" : [],
+          "origin" : "test3"
+      }
+  ],
+  "email" : "test3@test.test",
+  "password" : "$2b$10$7WqI6bGlJ62zuAFTS4yWU.qZzXyfM6RbIbV0EqpnnwFJvy6ikSYOi",
+  "username" : "test3"
+
+}]
