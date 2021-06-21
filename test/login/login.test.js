@@ -3,12 +3,12 @@ const {mockUser} = require('./mocks');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
-const User = require('../models/user');
-const server = require('../index.js');
+const User = require('../../models/user');
+const server = require('../../index.js');
 const request = require('supertest');
 const SECRET_KEY = process.env.SECRET_KEY;
 console.log(SECRET_KEY);
-let {storage} = require('../middlewares/tokenValidation');
+let {storage} = require('../../middlewares/tokenValidation');
 
 describe('login should work correctly - endpoint "/login"', function () {
   beforeEach(async () => {
