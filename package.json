@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --exec \"node -r dotenv/config\" index.js",
     "start": "node index.js",
-    "test": "jest",
+    "test": "NODE_ENV=test jest",
     "test:watch": "jest --watch"
   },
   "repository": {
@@ -34,9 +34,6 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "eslint": "^7.28.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.23.4",
     "jest": "^27.0.4",
     "morgan": "^1.10.0",
     "supertest": "^6.1.3"
