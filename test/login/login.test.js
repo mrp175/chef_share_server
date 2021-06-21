@@ -1,18 +1,19 @@
 require('dotenv').config();
-const mocks = require('./mocks');
+const {mockUser} = require('./mocks');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
-const User = require('../models/user');
-const server = require('../index.js');
+const User = require('../../models/user');
+const server = require('../../index.js');
 const request = require('supertest');
 const SECRET_KEY = process.env.SECRET_KEY;
 console.log(SECRET_KEY);
+let {storage} = require('../../middlewares/tokenValidation');
 
 describe('login should work correctly - endpoint "/login"', function () {
   beforeEach(async () => {
     try {
-      const {email, username, password} = mocks.jeff;
+      const {email, username, password} = mockUser.jeff;
       const saltRounds = 2;
       const hashedPassword = await bcrypt.hash(password, saltRounds);
       let user = new User({email, username, password: hashedPassword});
@@ -24,6 +25,7 @@ describe('login should work correctly - endpoint "/login"', function () {
   afterEach(async () => {
     try {
       await mongoose.connection.dropCollection('users');
+      storage = [];
     } catch (error) {
       return true;
     }
@@ -43,21 +45,21 @@ describe('login should work correctly - endpoint "/login"', function () {
   it('should respond with 200 status code when provided correct credentials', async function () {
     const response = await request(server)
     .post('/login')
-    .send(mocks.jeffLogin);
+    .send(mockUser.jeffLogin);
     expect(response.statusCode).toBe(200);
   });
   it('should respond with 403 status code when provided incorrect credentials', async function () {
     const response = await request(server)
     .post('/login')
-    .send({...mocks.jeffLogin, password: 'test1'});
+    .send({...mockUser.jeffLogin, password: 'test1'});
     expect(response.statusCode).toBe(403);
   });
   it('should return a valid access token when provided correct credentials', async function () {
-    const retrieveUser = await User.findOne({email: mocks.jeff.email});
+    const retrieveUser = await User.findOne({email: mockUser.jeff.email});
     const token = jwt.sign({_id: retrieveUser._id}, SECRET_KEY, {expiresIn: '3h'});
     const response = await request(server)
     .post('/login')
-    .send({...mocks.jeffLogin, password: 'test'});
+    .send({...mockUser.jeffLogin, password: 'test'});
     expect(response.body).toStrictEqual({accessToken: token});
   });
 });
