@@ -1,4 +1,5 @@
 require('dotenv').config();
+const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const router = require ('../../router');
 const express = require('express');
@@ -6,7 +7,7 @@ const app = express();
 const server = app
 .use(express.json())
 .use(router)
-.listen();
+.listen(3001);
 const request = require('supertest');
 const SECRET_KEY = process.env.SECRET_KEY;
 const token = jwt.sign({_id: '60cdb63d7701481e3450fc8'}, SECRET_KEY, {expiresIn: '3h'});
@@ -20,6 +21,11 @@ describe('logout should work correctly - endpoint "/logout"', function () {
   afterEach(async function () {
     await Token.collection.drop();
   });
+  afterAll(async function () {
+    await mongoose.connection.dropDatabase();
+    await mongoose.disconnect();
+  server.close();
+});
   it('should respond with 200 status code after successfully logging out', async function () {
     const response = await request(server)
     .get('/logout')

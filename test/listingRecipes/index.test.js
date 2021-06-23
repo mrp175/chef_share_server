@@ -9,18 +9,19 @@ app.use(express.json())
 const testingServer = app.use(router).listen (PORT+1);
 const jwt = require('jsonwebtoken');
 const User = mongoose.connection.model('User');
+const Token = mongoose.connection.model('Token');
 const mockData = require('./mockData.json')
 const request = supertest(testingServer)
 const SECRET_KEY = process.env.SECRET_KEY;
-const {storage} = require ('../../middlewares/tokenValidation.js')
 const token = jwt.sign({_id: "60cdb63d7701481e3450fc89"}, SECRET_KEY, {expiresIn: '3h'});
-storage.push(token)
 
 
 describe('Listing recipes', () => {
 
   beforeAll(async ()=> {
    await User.insertMany(mockData);
+   const newToken = await new Token({token});
+   await newToken.save();
   });
 
 
