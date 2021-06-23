@@ -1,9 +1,14 @@
 require('dotenv').config();
 const jwt = require('jsonwebtoken');
-const server = require('../../index.js');
+const router = require ('../../router');
+const express = require('express');
+const app = express();
+const server = app
+.use(express.json())
+.use(router)
+.listen();
 const request = require('supertest');
 const SECRET_KEY = process.env.SECRET_KEY;
-console.log(SECRET_KEY);
 const token = jwt.sign({_id: '60cdb63d7701481e3450fc8'}, SECRET_KEY, {expiresIn: '3h'});
 const Token = require('../../models/token');
 
@@ -44,6 +49,6 @@ describe('logout should work correctly - endpoint "/logout"', function () {
     const response = await request(server)
     .get('/logout')
     .set('Authorization', `Bearer: null`);
-    expect(response.text).toBe('You need to be logged in first');
+    expect(response.text).toBe('You need to be logged in first');;
   });
 });
