@@ -15,4 +15,6 @@ mongoose.connect(
   }
 );
 
+mongoose.set('useFindAndModify', false);
+
 module.exports = mongoose;

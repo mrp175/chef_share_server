@@ -1,19 +1,22 @@
-// token whitelist
-let storage = [];
+const Token = require('../models/token');
 
-
-function validateToken (token) {
-  storage.push(token);
+async function validateToken (token) {
+  const oldToken = await Token.findOne({token});
+  if (oldToken) await Token.findOneAndRemove({token});
+  const newToken = await new Token({token});
+  newToken.save();
 }
 
-function invalidateToken (token) {
-  storage = storage.filter(tok => tok !== token);
+async function invalidateToken (token) {
+  await Token.findOneAndRemove({token});
 }
 
-function isTokenValid (token) {
-  return storage.includes(token);
+async function isTokenValid (token) {
+  const retrievedToken = await Token.findOne({token});
+  if (retrievedToken) return true;
+  else return false;
 }
 
-module.exports = {storage,
+module.exports = {
   validateToken, isTokenValid, invalidateToken
 };
