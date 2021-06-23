@@ -4,11 +4,15 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const mongoose = require('mongoose');
 const User = require('../../models/user');
-const server = require('../../index.js');
 const request = require('supertest');
+const express = require('express');
+const app = express();
+const router = require ('../../router');
+const server = app
+.use(express.json())
+.use(router)
+.listen();
 const SECRET_KEY = process.env.SECRET_KEY;
-console.log(SECRET_KEY);
-let {storage} = require('../../middlewares/tokenValidation');
 
 describe('login should work correctly - endpoint "/login"', function () {
   beforeEach(async () => {
@@ -30,6 +34,9 @@ describe('login should work correctly - endpoint "/login"', function () {
       return true;
     }
   });
+  afterAll(function () {
+    server.close();
+  })
   it('should return an error if the password is missing', async function () {
     const response = await request(server)
     .post('/login')
