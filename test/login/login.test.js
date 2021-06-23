@@ -34,9 +34,11 @@ describe('login should work correctly - endpoint "/login"', function () {
       return true;
     }
   });
-  afterAll(function () {
+  afterAll(async function () {
+      await mongoose.connection.dropDatabase();
+      await mongoose.disconnect();
     server.close();
-  })
+  });
   it('should return an error if the password is missing', async function () {
     const response = await request(server)
     .post('/login')
