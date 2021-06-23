@@ -45,8 +45,11 @@ const login = async (req, res) => {
     return res.status(403).end('invalid username or password');
   }
 
+  let token = req.headers['authorization'].split(' ')[1];
+  if (token === 'null') {
+    token = jwt.sign({_id: user._id}, SECRET_KEY, {expiresIn: '3h'});
+  }
   // send back access token
-  let token = jwt.sign({_id: user._id}, SECRET_KEY, {expiresIn: '3h'});
   validateToken(token);
   res.status(200).json({accessToken: token});
 }
