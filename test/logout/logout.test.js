@@ -49,6 +49,6 @@ describe('logout should work correctly - endpoint "/logout"', function () {
     const response = await request(server)
     .get('/logout')
     .set('Authorization', `Bearer: null`);
-    expect(response.text).toBe('You need to be logged in first');;
+    expect(response.text).toBe('You need to be logged in first');
   });
 });
