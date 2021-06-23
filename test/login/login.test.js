@@ -45,6 +45,7 @@ describe('login should work correctly - endpoint "/login"', function () {
   it('should respond with 200 status code when provided correct credentials', async function () {
     const response = await request(server)
     .post('/login')
+    .set('Authorization', `Bearer: null`)
     .send(mockUser.jeffLogin);
     expect(response.statusCode).toBe(200);
   });
@@ -59,7 +60,10 @@ describe('login should work correctly - endpoint "/login"', function () {
     const token = jwt.sign({_id: retrieveUser._id}, SECRET_KEY, {expiresIn: '3h'});
     const response = await request(server)
     .post('/login')
-    .send({...mockUser.jeffLogin, password: 'test'});
+    .set('Authorization', `Bearer: null`)
+    .send(mockUser.jeffLogin);
     expect(response.body).toStrictEqual({accessToken: token});
   });
 });
+
+
