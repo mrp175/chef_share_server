@@ -1,6 +1,8 @@
-const User = require("../models/user");
+import User from "../models/user"
+import {Request, Response} from 'express'
+import {Options} from '../types'
 
-const deleteRecipe = async (req, res) => {
+const deleteRecipe = async (req:Request, res:Response):Promise<void> => {
   const userId = req.body._id;
   const recipeId = req.body.id;
 
@@ -16,7 +18,7 @@ const deleteRecipe = async (req, res) => {
   }
 }
 
-const addFromFriend = async (req, res) => {
+const addFromFriend = async (req:Request, res:Response):Promise<void> => {
   const userId = req.body._id;
   const recipe = req.body.recipe;
 
@@ -33,12 +35,12 @@ const addFromFriend = async (req, res) => {
 }
 
 
-const editRecipe = async(req, res) => {
+const editRecipe = async(req:Request, res:Response):Promise<void> => {
   const userId = req.body._id;
   const recipeId = req.body.id
   const editAction = req.params.editAction;
 
-  let options = {
+  let options:any = {
     'nameChange': {$set: {'recipeStore.$.name': req.body.payload}},
     'addNote': {$push: {'recipeStore.$.notes': req.body.payload}},
     'deleteNote':{$pull: {'recipeStore.$.notes': {id: req.body.payload}}},
@@ -48,7 +50,7 @@ const editRecipe = async(req, res) => {
     await User.findOneAndUpdate(
       {_id: userId, recipeStore: {$elemMatch: {id: recipeId}}},
       options[editAction],
-      {'new': true, 'safe': true}
+      {'new': true}
     );
     res.status(200).send('successfully updated');
 

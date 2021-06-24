@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
-const { DB_CONN, NODE_ENV,DB_CONN_TEST} = process.env;
+import mongoose from 'mongoose';
+const { DB_CONN, NODE_ENV,DB_CONN_TEST} = process.env as {[key:string]: string};
 
-const dbURL = (NODE_ENV === 'test')?DB_CONN_TEST:DB_CONN;
+const dbURL:string = (NODE_ENV === 'test')?DB_CONN_TEST:DB_CONN;
 
 mongoose.connect(
     dbURL,
@@ -17,4 +17,4 @@ mongoose.connect(
 
 mongoose.set('useFindAndModify', false);
 
-module.exports = mongoose;
+export default mongoose;

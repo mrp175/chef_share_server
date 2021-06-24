@@ -1,22 +1,20 @@
-const Token = require('../models/token');
+import Token from '../models/token';
 
-async function validateToken (token) {
+export async function validateToken (token:string|undefined):Promise<void> {
   const oldToken = await Token.findOne({token});
   if (oldToken) await Token.findOneAndRemove({token});
-  const newToken = await new Token({token});
-  newToken.save();
+  const newToken = new Token({token});
+  await newToken.save();
 }
 
-async function invalidateToken (token) {
+export async function invalidateToken (token:string|undefined):Promise<void>{
   await Token.findOneAndRemove({token});
 }
 
-async function isTokenValid (token) {
+export async function isTokenValid (token:string|undefined):Promise<boolean>{
   const retrievedToken = await Token.findOne({token});
   if (retrievedToken) return true;
   else return false;
 }
 
-module.exports = {
-  validateToken, isTokenValid, invalidateToken
-};
+

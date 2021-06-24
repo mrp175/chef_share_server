@@ -1,11 +1,13 @@
-const cheerio = require('cheerio');
-const fetch = require('node-fetch');
-const _ = require('lodash');
+import cheerio from 'cheerio';
+import fetch, {RequestInit} from 'node-fetch';
+import _ from 'lodash';
 const User = require('../models/user');
-const uuid = require('uuid');
+import { v4 } from 'uuid';
+import {Request, Response} from 'express'
+import {Recipe} from '../types'
 
 
-const fetchWithTimeout = (url, options, timeout = 5000) => {
+const fetchWithTimeout = (url:string, options?:RequestInit, timeout = 5000):Promise<any> => {
   return Promise.race([
       fetch(url, options),
       new Promise((_, reject) =>
@@ -14,23 +16,23 @@ const fetchWithTimeout = (url, options, timeout = 5000) => {
   ]);
 }
 
-const fetchHtml = (url) => {
-  return fetchWithTimeout(url).then(res => res.text());
+const fetchHtml = (url:string) => {
+  return fetchWithTimeout(url).then((res) => res.text());
 }
 
-const parseHtml = (html) => {
+const parseHtml = (html:string) => {
   const $ = cheerio.load(html);
   const jsonld = $('script[type="application/ld+json"]').html();
   if (!jsonld) return false;
   const recipe = JSON.parse(jsonld);
 
-  let nestedRecipe = {};
+  let nestedRecipe:any = {};
   if (!recipe.hasOwnProperty('recipeIngredient')) {
     console.log('i was nested');
     if (Array.isArray(recipe)){
       nestedRecipe = recipe.filter(obj => obj['@type'] === 'Recipe')[0];
     } else if (nestedRecipe !== {}) {
-      nestedRecipe = recipe['@graph'].filter(obj => obj['@type'] === 'Recipe')[0];
+      nestedRecipe = recipe['@graph'].filter((obj:any) => obj['@type'] === 'Recipe')[0];
     }
   }
 
@@ -43,11 +45,11 @@ const parseHtml = (html) => {
   }
 }
 
-const extractData = (jsonld) => {
-  desiredKeys = ['name','keywords','recipeYield', 'recipeIngredient','image', 'recipeInstructions', 'publisher', 'author']
-  const recipe = {}
+const extractData = (jsonld:any):Recipe => {
+  const desiredKeys = ['name','keywords','recipeYield', 'recipeIngredient','image', 'recipeInstructions', 'publisher', 'author']
+  const recipe:Recipe = {name:'', keywords:[],recipeYield:'',recipeIngredient:[], image:'', recipeInstructions:[], publisher:'',author:'', url:'', id:'', notes:[], origin:''}
 
-  for (key of desiredKeys) {
+  for (let key of desiredKeys) {
     if (jsonld.hasOwnProperty(key)) {
 
       if (key === 'keywords' && typeof jsonld[key] === 'string') {
@@ -63,14 +65,14 @@ const extractData = (jsonld) => {
         recipe[key] = '';
 
       } else if (key === 'recipeInstructions') {
-        recipe[key] = jsonld[key].map(obj => obj.text);
+        recipe[key] = jsonld[key].map((obj:any) => obj.text);
 
       } else if (key === 'publisher') {
         if (jsonld[key].hasOwnProperty('name')) recipe[key] = jsonld[key].name;
 
       } else if (key === 'author') {
         if (Array.isArray(jsonld[key])) {
-          recipe[key] = jsonld[key].map(obj => obj.name).join(',');
+          recipe[key] = jsonld[key].map((obj:any) => obj.name).join(',');
         } else if (jsonld[key].hasOwnProperty('name')) {
           recipe[key] = jsonld[key].name;
         }
@@ -85,7 +87,7 @@ const extractData = (jsonld) => {
 }
 
 
-const handleScrape = async (req, res) => {
+const handleScrape = async (req:Request, res:Response):Promise<void> => {
   try {
     const html = await fetchHtml(req.body.url);
     const jsonld = parseHtml(html);
@@ -93,7 +95,7 @@ const handleScrape = async (req, res) => {
 
     const recipe = extractData(jsonld);
     recipe.url = req.body.url
-    recipe.id = uuid.v4();
+    recipe.id = v4();
     recipe.notes = [];
 
     const user = await User.findById(req.body._id);
