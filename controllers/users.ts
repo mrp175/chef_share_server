@@ -1,23 +1,25 @@
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
+import bcrypt from 'bcrypt';
+import jwt, { Secret } from 'jsonwebtoken';
+import {UserSchema} from '../types'
+import {Request, Response} from 'express'
 
-const User = require('../models/user');
-const { validateToken, invalidateToken } = require('../middlewares/tokenValidation');
-const SECRET_KEY = process.env.SECRET_KEY
+import User from '../models/user'
+import { validateToken, invalidateToken } from '../middlewares/tokenValidation';
+const SECRET_KEY = process.env.SECRET_KEY as string
 
 
-const createUser = async (req, res) => {
+const createUser = async (req:Request, res:Response):Promise<void> => {
   try {
     const {email, password, username} = req.body;
 
     if (!(email && password && username))  {
-      return res.status(400).send('invalid request');
+       res.status(400).send('invalid request');return
     }
     if (await User.findOne({email}).exec()) {
-      return res.status(403).send('user already exists!');
+       res.status(403).send('user already exists!');return
     }
     if (await User.findOne({username}).exec()) {
-      return res.status(409).send('this username is taken');
+       res.status(409).send('this username is taken');return
     }
 
     // create user
@@ -25,7 +27,7 @@ const createUser = async (req, res) => {
     const newUser = await new User({email, password: hashedPassword, username});
     newUser.save();
     // send back access token
-    let token = jwt.sign({_id: newUser._id}, SECRET_KEY, {expiresIn: '3h'});
+    let token:string = jwt.sign({_id: newUser._id}, SECRET_KEY, {expiresIn: '3h'});
     validateToken(token);
     res.status(201).json({accessToken: token});
 
@@ -35,7 +37,7 @@ const createUser = async (req, res) => {
   }
 }
 
-const login = async (req, res) => {
+const login = async (req:Request, res:Response):Promise<void> => {
   const { email, password } = req.body;
   if (!email || !password) {
     return res.status(400).end('username and password are required');
@@ -45,8 +47,8 @@ const login = async (req, res) => {
     return res.status(403).end('invalid username or password');
   }
 
-  let token = req.headers['authorization'].split(' ')[1];
-  if (token === 'null') {
+  let token = req.headers['authorization']?.split(' ')[1];
+  if (token) {
     token = jwt.sign({_id: user._id}, SECRET_KEY, {expiresIn: '3h'});
   }
   // send back access token
@@ -55,7 +57,7 @@ const login = async (req, res) => {
 }
 
 
-const profile = async (req, res) => {
+const profile = async (req:Request, res:Response):Promise<void> => {
   const user = await User.findById(req.body._id);
   if(user) {
     res.status(200).json(user);
@@ -64,16 +66,16 @@ const profile = async (req, res) => {
   }
 }
 
-const logout = async (req, res) => {
-   token = req.headers['authorization'].split(' ')[1];
+const logout = async (req:Request, res:Response):Promise<void> => {
+   const token = req.headers['authorization']?.split(' ')[1];
    invalidateToken(token);
    res.status(200).send('logout successful');
 }
 
 
-const getAllButMe = async (req, res) => {
+const getAllButMe = async (req:Request, res:Response):Promise<void> => {
   try {
-    const users = await User.find();
+    const users:UserSchema[] = await User.find();
     const allButMe = users.filter(user => user.id !== req.body._id);
     const usernames = allButMe.map(user => user.username);
     res.status(200).json(usernames);
@@ -83,7 +85,7 @@ const getAllButMe = async (req, res) => {
   }
 }
 
-const getFriendStore = async (req, res) => {
+const getFriendStore = async (req:Request, res:Response):Promise<void> => {
   try {
     const user = await User.findOne({username: req.body.username});
     if (user) {

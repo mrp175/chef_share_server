@@ -1,11 +1,10 @@
-const jwt = require('jsonwebtoken');
-const User = require('../models/user');
+import jwt from 'jsonwebtoken';
+import { Request, Response,NextFunction} from 'express';
+import { isTokenValid } from './tokenValidation';
+const SECRET_KEY = process.env.SECRET_KEY as string;
 
-const { isTokenValid } = require('./tokenValidation');
-const SECRET_KEY = process.env.SECRET_KEY;
 
-
-const authMiddleware = async (req, res, next) => {
+const authMiddleware = async (req:Request, res:Response, next:NextFunction) => {
   try {
 
     // get token
@@ -17,7 +16,7 @@ const authMiddleware = async (req, res, next) => {
       throw new Error('invalid token');
     }
 
-    let tokenData = jwt.verify(token, SECRET_KEY);
+    let tokenData:any = jwt.verify(token, SECRET_KEY);
     req.body._id = tokenData._id;
 
     next();
