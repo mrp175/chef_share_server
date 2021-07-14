@@ -1,43 +1,71 @@
-# Chef-Share-Server
 
-**Rules for committing:**
-All commits should fall into one of these categories: 
+# Project Title
 
-* fix: Patches a bug in your codebase.
-* feat: Introduces a new feature to the codebase.
-* BREAKING CHANGE:  A commit that has a footer BREAKING CHANGE:, or appends a ! after the type/scope, introduces a breaking change. A BREAKING CHANGE can be part of commits of any type.
-* style: Adds features and updates related to styling.
-* test: Should be used for anything related to testing.
-* docs: Should be used for anything related to documentation.
-* chore: Should be used for regular code maintenance.
-* misc: Should be used for anything else that does not fall into these categories.
+A brief description of what this project does and who it's for
 
 
+## Screenshots
 
-**Here is an example of a good commit message:**
-Capitalized, short (50 chars or less) summary
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
-More detailed explanatory text, if necessary.  Wrap it to about 72
-characters or so.  In some contexts, the first line is treated as the
-subject of an email and the rest of the text as the body.  The blank
-line separating the summary from the body is critical (unless you omit
-the body entirely); tools like rebase can get confused if you run the
-two together.
 
-Write your commit message in the imperative: "Fix bug" and not "Fixed bug"
-or "Fixes bug."  This convention matches up with commit messages generated
-by commands like git merge and git revert.
+## Badges
 
-Further paragraphs come after blank lines.
+Add badges from somewhere like: [shields.io](https://shields.io/)
 
-- Bullet points are okay, too
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
-- Typically a hyphen or asterisk is used for the bullet, followed by a
-  single space, with blank lines in between, but conventions vary here
 
-- Use a hanging indent
+## Tech Stack
 
-If you use an issue tracker, add a reference(s) to them at the bottom,
-like so:
+**Client:** React, Redux, TailwindCSS
 
-Resolves: #123
+**Server:** Node, Express
+
+
+## Installation
+
+Install my-project with npm
+
+```bash
+  npm install my-project
+  cd my-project
+```
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`API_KEY`
+
+`ANOTHER_API_KEY`
+
+
+## Features
+
+- Light/dark mode toggle
+- Live previews
+- Fullscreen mode
+- Cross platform
+
+
+## Optimizations
+
+What optimizations did you make in your code? E.g. refactors, performance improvements, accessibility
+
+
+## Contributing
+
+Contributions are always welcome!
+
+See `contributing.md` for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+
+## Authors
+
+- [@katherinepeterson](https://www.github.com/octokatherine)
+
